@@ -75,6 +75,113 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <!--This line goes inside <head> section of the HTML document-->
     
-            
-            
+<!--HTML Tables--> 
+<!--Used to display data in a structured format-->
+<!--Basic Table Structure-->
+<!--tr for rows and td for data and th for headers-->
+<!-- The <table> tag defines the table, <tr> defines a row, <th> defines a header cell, 
+    and <td> defines a standard cell-->
+<!-- Using <thead> and <tbody> makes tables more structured and easier to style-->
+
+    <table border ="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>30</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>35</td>
+                <td>UK</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Why Use <thead> and <tbody> 
+
+   1. Better Readability: It separates the header from the body, making it easier to read and understand.
+   2. Improved Styling: It allows for more targeted CSS styling, enabling you to style headers and body rows differently.
+   3. Accessibility: Enhances support for screen readers.
+   4. Easier Scripting: Javascript can target specific sections more efficiently
+   5. Consistent Structure: It provides a consistent structure for tables, especially when dealing with large datasets. --> 
+
+   <!-- Adding a Table Caption-->
+
+   <table border="1">
+    <caption>Employee Data</caption>
+    <tr>
+        <th>Name</th>
+        <th>Position</th>
+    </tr>
+    <tr>
+        <td>Sarah</td>
+        <td>Manager</td>
+    </tr>
+   </table>
+
+   <!-- Merging Cells-->
+    <!-- Use the rowspan and colspan attributes to merge cells vertically or horizontally-->
+    <!--colspan-->
+    <tr>
+        <td colspan="2">Merged Column</td>
+    </tr>
+
+    <!--rowspan-->
+    <tr>
+        <td rowspan="2">Merged Row</td>
+       <td>Data 1</td>
+    </tr>
+    <tr>
+        <td>Data 2</td>
+    </tr>
+
+    Embedding Multimedia with <audio> and video and <canvas>
+    <!-- The <audio> tag is used to embed sound content in documents-->
+       <!-- It has options for playback controls:--> 
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+       </audio>     
+
+       <!-- key Atributes -->
+         controls: Displays playback controls like play, pause, and volume.
+         Autoplay: Starts playing the audio automatically when the page loads.
+         Loop: Repeats the audio indefinitely.
+
+         <!-- Embedding Video-->
+          <!-- The <video> tag brings videos to your pages-->
+
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
         
+                if you also change atributes it shows 
+            <video controls width="640" height="360">
+                <source src="video.mp4" type="video/mp4">
+                 Your browser does not support the video element.
+            </video>
+
+            <!--Key attributes
+            Width & Height: Set the video dimensions of the video player.
+            Controls: Displays playback controls like play, pause, and volume.
+            Poster:Displays an image before the video starts playing.
+            muted: Starts the video muted. -->
+            
+
+        
+            
